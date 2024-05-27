@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        #block1{
+            display: inline-block;
+            height:400px;
+            width:400px;
+            background-color: red;
+            transition: 3s;
+            cursor:pointer;
+        }
+        #block1:hover{
+            background-color: green;
+            border-radius: 50%;
+        }
+        #block2{
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            margin-left: 100px;
+            transform: rotate(-45deg);
+            border-radius: 50%;
+            background-image: url(bird.jpg);
+            background-size: 100% 100%;
+            background-color: red;
+            cursor: pointer;
+            transition: 3s;
+        }
+        #block2:hover{
+            transform: rotate(0deg);
+            border-radius: 50%;
+            background-image: url(bird.jpg);
+            background-size: 100% 100%;
+            width:400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="block1"> </div>
+    <div id="block2"> </div>
+</body>
+</html>

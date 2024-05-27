@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> menu </title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        .menu{
+            text-align: center;
+            background-color: black;
+        }
+        .menu li{
+            display: inline-block;
+            color: white;
+            padding: 20px 40px 20px;
+            font-size:30px;
+        }
+        .menu li:hover{
+            cursor: pointer;
+            color:red;
+        }
+        #submenu{
+            padding-left: 0px;
+            padding-right: 10px;
+            margin-top: 20px;
+            background-color: aqua;
+            color:white;
+            position: absolute;
+            display: none;
+        }
+        #submenu li{
+            text-align: left;
+            margin-right: -30px;
+            margin-left:-30px;
+            display: block;
+        }
+        .menu li:hover #submenu{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <li> home </li>
+        <li> products 
+            <ul id="submenu">
+                <li> <a href="a-form.html"> tool kit </a></li>
+                <li> extension box</li>
+                <li> circuit breaker</li>
+            </ul>
+        </li>
+        <li> services </li>
+        <li> contact us </li>
+    </ul>
+</body>
+</html>

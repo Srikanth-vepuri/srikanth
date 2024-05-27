@@ -1,0 +1,58 @@
+h1{text-align: center;
+    color: blue;
+}
+#whole{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 40px;
+    max-width: 100%;
+}
+.first,.second,.third,.fourth{
+    flex: 20%;
+    margin:10px;
+    max-width: 100%;
+    padding: 10px;
+    box-shadow: 3px 3px 3px 3px orange;
+    background-color: greenyellow;
+}
+/* media queries (from 0-600px)*/
+@media screen and (min-width:0px) and (max-width:600px) {
+    h1{text-align: center;
+        color: black;
+    }
+    .first,.second,.third,.fourth{
+        margin:10px;
+        flex:100%;
+        color: black;
+        background-image: url(bird.jpg); background-size: 100% 100%;
+    }
+    #whole{
+        height: 500px;
+        background-color: lightgreen;
+    }
+}
+/*(from 601-800px)*/
+@media screen and (min-width:601px) and (max-width:800px) {
+    h1{text-align: center;
+        color: green;
+    }
+    .first,.second,.third,.fourth{
+        margin:10px;
+        flex:40%;
+        color: black;
+        background-color: violet;
+    }
+}
+/*(from 801-1200px)*/
+@media screen and (min-width:801px) and (max-width:1200px) {
+    h1{text-align: center;
+        color: red;
+    }
+    .first,.second,.third,.fourth{
+        margin:10px;
+        flex: 20%;
+        color: yellow;
+        background-image:linear-gradient( to right,green,purple,grey);
+    }
+}
