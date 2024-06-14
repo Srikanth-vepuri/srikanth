@@ -3,53 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style> #text{
-        font-size: 30px;
-    }
-    body{
-        margin: 0px;
-        padding: 0px;
-        background-color: antiquewhite;
-    }
-    #label{
-        background-color: antiquewhite;
-    }
-    .field{
-        padding: 40px 80px;
-        align-items: center;
-        height: 400px;
-        width: 400px;
-        background-image: url(bird.jpg);background-size: 100% 100%;
-    }
-    .btn{
-        margin:50px 80px;
-        border-radius: 10px;
-        height: 40px;
-        font-size: large;
-        background-color: black;
-        color: aliceblue;
-    }
-    .form{
-        margin-top: 100px;
-        margin-left: 500px;
-    }
-    </style>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="new.css">
 </head>
 <body>
-<form class="form">
-    <fieldset class="field">
-        <label id="text"> Name :  </label>
-        <input type="text" id="label"><br><br>
-        <label id="text"> email : </label>
-        <input type="text" id="label"><br><br>
-        <label id="text"> phone : </label>
-        <input type="text" id="label"><br><br>
-        <label id="text"> address : </label>
-        <input type="text" id="label"><br><br>
-
-        <button class="btn"> submit </button>
-    </fieldset>
-</form>
+<div class="container">
+    <h1>Survey Form</h1>
+    <form id="survey">
+        <div class="form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form">
+            <label>Do you own a car?</label><br>
+            <input type="radio"  value="yes"> Yes
+            <input type="radio"  value="no"> No
+        </div>
+        <div class="form">
+            <label for="carmake"> Car make </label>
+            <select id="carmake" required>
+                <option value="">Select</option>
+                <option value="suzuki">suzuki</option>
+                <option value="mahindra">mahindra</option>
+                <option value="scorpio">scorpio</option>
+                <option value="bmw">bmw</option>
+            </select>
+        </div>
+        <div class="form">
+            <label for="driving">How often do you drive?</label>
+            <select id="driving" required>
+                <option value="">Select</option>
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="rarely">Rarely</option>
+            </select>
+        </div>
+        <div class="form">
+            <label>What is your primary purpose of driving?</label><br>
+            <input type="checkbox"  value="work"> Work<br>
+            <input type="checkbox"  value="leisure"> Leisure<br>
+            <input type="checkbox"  value="other"> Other
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</div>
 </body>
 </html>

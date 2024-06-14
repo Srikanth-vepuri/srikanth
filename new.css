@@ -1,0 +1,80 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    background-image: url(bird-thumbnail.jpg); background-size: 100% 100%;
+}
+
+.container {
+    background-image: url(bird-thumbnail.jpg); background-size: 100% 100%;
+    width: 600px;
+    font-size: 20px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form{
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],input[type="email"],
+select,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@media screen and (min-width:1px) and (max-width:600px){
+    .container {
+        background-image: url(bird-thumbnail.jpg); background-size: 100% 100%;
+        width: 400px;
+        font-size: 20px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        box-shadow: 0 0 10px;
+}
+}
+@media screen and (min-width:601px) and (max-width:800px){
+    .container {
+        background-image: url(bird-thumbnail.jpg); background-size: 100% 100%;
+        width: 400px;
+        font-size: 20px;
+        margin: 30px auto;
+        padding: 20px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        box-shadow: 0 0 10px;
+}
+}
